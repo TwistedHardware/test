@@ -34,12 +34,12 @@ jobs:
       - name: compile static pages
         run: echo '<h1>Helloooo</h1>' > index.html
 
-      # Runs a set of commands using the runners shell
-      - name: delete website
-        run: git branch -D website
+      # # Runs a set of commands using the runners shell
+      # - name: delete website
+      #   run: git branch -D origin/website
 
       - name: checkout
-        run: git checkout -b website
+        run: git checkout website
 
       - name: add
         run: git add *.html
