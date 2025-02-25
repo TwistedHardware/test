@@ -30,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: compile static pages
-        run: cat '<h1>Title</h1><p>' > index.html && cat README.md >> index.html && cat '</p>' > index.html
+        run: echo '<h1>Title</h1><p>' > index.html && cat README.md >> index.html && echo '</p>' >> index.html
 
       # # Runs a set of commands using the runners shell
       # - name: delete website
