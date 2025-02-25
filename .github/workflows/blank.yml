@@ -30,10 +30,6 @@ jobs:
         with:
           fetch-depth: 0
 
-
-      - name: change directory
-        run: cd test
-
       # Runs a single command using the runners shell
       - name: compile static pages
         run: echo '<h1>Helloooo</h1>' > index.html
