@@ -44,8 +44,10 @@ jobs:
       - name: add
         run: git add *.html
 
-      - name: commit
-        run: git commit -m "update static website"
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: website
+          
 
       - name: push
         run: git push origin website
