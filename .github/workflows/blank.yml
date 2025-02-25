@@ -34,7 +34,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: delete website
-        run: git branch -D website &>/dev/null
+        run: git branch -D website
 
       - name: checkout
         run: git checkout -b website
