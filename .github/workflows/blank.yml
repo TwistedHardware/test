@@ -37,7 +37,7 @@ jobs:
       #   run: git branch -D origin/website
 
       - name: checkout
-        run: git checkout website
+        run: git checkout -b website
 
       - name: add
         run: git add *.html
