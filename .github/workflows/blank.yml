@@ -30,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: compile static pages
-        run: echo '<h1>Helloooo123</h1>' > index.html
+        run: echo '<h1>Helloooo1234</h1>' > index.html
 
       # # Runs a set of commands using the runners shell
       # - name: delete website
@@ -46,9 +46,3 @@ jobs:
         with:
           branch: website
           push_options: '--force'
-          
-
-      - name: push
-        run: git push origin website
-
-        
